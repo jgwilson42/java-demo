@@ -1,6 +1,6 @@
 package com.diffblue.javademo.shop;
 
-import java.math.BigDecimal;
+
 
 /**
  * Created by jamesw on 26/06/2017.
@@ -15,12 +15,12 @@ public class Product {
    */
 
   private String name = new String("");
-  private BigDecimal price = new BigDecimal(0);
+  private Integer price = new Integer(0);
   private String sku = new String ("");
   private int weight = 0;
   private String medium = new String("");
 
-  public Product(String newSku, String newName, BigDecimal newPrice, String newMedium, int newWeight) {
+  public Product(String newSku, String newName, Integer newPrice, String newMedium, int newWeight) {
     setSku(newSku);
     setName(newName);
     setPrice(newPrice);
@@ -37,17 +37,11 @@ public class Product {
     return name;
   }
 
-  public boolean setPrice(BigDecimal newPrice) {
-    if (newPrice.scale() == 2 ) {
-      // We have a valid price (two digits after the decimal point)
-      price = newPrice;
-      return true;
-    } else {
-      return false;
-    }
+  public void setPrice(Integer newPrice) {
+    price = newPrice;
   }
 
-  public BigDecimal getPrice() {
+  public Integer getPrice() {
     return price;
   }
 

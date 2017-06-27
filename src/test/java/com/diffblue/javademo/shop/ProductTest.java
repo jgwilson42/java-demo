@@ -3,8 +3,6 @@ package com.diffblue.javademo.shop;
 import org.junit.Test;
 import org.junit.Assert;
 
-import java.math.BigDecimal;
-
 /**
  * Created by jamesw on 26/06/2017.
  */
@@ -22,7 +20,7 @@ public class ProductTest {
      */
 
     String name = new String("Test Product");
-    BigDecimal price = new BigDecimal("9.99");
+    Integer price = new Integer(999);
     String sku = new String("TEST001");
     int weight = 0;
     String medium = new String("Electronic");

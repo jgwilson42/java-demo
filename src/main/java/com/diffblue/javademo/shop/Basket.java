@@ -1,7 +1,6 @@
 package com.diffblue.javademo.shop;
 
 import java.util.ArrayList;
-import java.math.BigDecimal;
 
 /**
  * Created by jamesw on 27/06/2017.
@@ -9,7 +8,7 @@ import java.math.BigDecimal;
 public class Basket {
 
   private ArrayList<Product> products = new ArrayList<Product>();
-  private BigDecimal vat = new BigDecimal("1.2");
+  private Integer vat = new Integer(120);
   private String customerId = new String();
 
   public Basket (String custId) {
@@ -52,11 +51,11 @@ public class Basket {
     products.add(product);
   }
 
-  public BigDecimal getValue() {
-    BigDecimal value = new BigDecimal("0");
+  public Integer getValue() {
+    Integer value = new Integer(0);
 
     for(Product currentProduct:products) {
-      value = value.add(currentProduct.getPrice().multiply(vat));
+      value = value + (currentProduct.getPrice() * (vat / 100));
     }
 
     return value;

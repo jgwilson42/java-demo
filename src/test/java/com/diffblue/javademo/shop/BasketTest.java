@@ -3,7 +3,6 @@ package com.diffblue.javademo.shop;
 import org.junit.Test;
 import org.junit.Assert;
 
-import java.math.BigDecimal;
 
 /**
  * Created by jamesw on 27/06/2017.
@@ -15,7 +14,7 @@ public class BasketTest {
   public void addProduct() {
     // Setup a product
     String name = new String("Test Product");
-    BigDecimal price = new BigDecimal("9.99");
+    Integer price = new Integer(999);
     String sku = new String("TEST001");
     int weight = 0;
     String medium = new String("Electronic");
@@ -29,9 +28,9 @@ public class BasketTest {
     myBasket.addProduct(myProduct, 1);
 
     // Calculate the expected value of the basket
-    BigDecimal cost = new BigDecimal("9.99");
-    BigDecimal currentVAT = new BigDecimal("1.2");
-    BigDecimal expectedValue = cost.multiply(currentVAT);
+    Integer cost = new Integer(999);
+    Integer currentVAT = new Integer(120);
+    Integer expectedValue = cost * (currentVAT / 100);
 
     Assert.assertEquals(expectedValue, myBasket.getValue());
 
