@@ -10,6 +10,6 @@ units:
   - context: []
     libs: []
     target:
-    - dir: main-module/target/classes
+    - dir: target/classes
       file: com/diffblue/javademo/TicTacToe.class
       sourceDir: /src/main/java
