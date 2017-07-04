@@ -6,3 +6,10 @@ cbmcArguments:
   java-max-input-array-length: 10
   unwind: 10
   classpath: /docker-java-home/jre/lib/ext/models.jar:.
+units:
+  - context: []
+    libs: []
+    target:
+    - dir: main-module/target/classes
+      file: com/diffblue/javademo/TicTacToe.class
+      sourceDir: /src/main/java
