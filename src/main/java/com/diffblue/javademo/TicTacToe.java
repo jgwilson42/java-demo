@@ -84,9 +84,9 @@ public class TicTacToe {
     }
     // Return the char with the least number of moves
     if (oMoves > xMoves) {
-      return 'o';
-    } else {
       return 'x';
+    } else {
+      return 'o';
     }
   }
 
