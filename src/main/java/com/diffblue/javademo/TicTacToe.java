@@ -40,7 +40,7 @@ public class TicTacToe {
     // Location 3,4,5
     // Location 6,7,8
     for (int i=0; i < 7; i = i + 3) {
-      if (board[i] == board[i+1] && board[i] == board[i+2]) {
+      if (board[i] == board[i+1] && board[i] == board[i+2] && (board[i] == 'x' || board[i] == 'o')) {
         return board[i];
       }
     }
@@ -50,7 +50,7 @@ public class TicTacToe {
     // Location 1,4,7
     // Location 2,5,8
     for (int i=0; i<3; i++) {
-      if (board[i] == board[i+3] && board[i] == board[i+6]) {
+      if (board[i] == board[i+3] && board[i] == board[i+6] && (board[i] == 'x' || board[i] == 'o')) {
         return board[i];
       }
     }
@@ -58,10 +58,10 @@ public class TicTacToe {
     // Check to see if either player has won via a diagonal
     // Location 0,4,8
     // Location 2,4,6
-    if (board[0] == board[4] && board[0] == board[8]) {
+    if (board[0] == board[4] && board[0] == board[8] && (board[0] == 'x' || board[0] == 'o')) {
       return board[0];
     }
-    if (board[2] == board[4] && board[2] == board[6]) {
+    if (board[2] == board[4] && board[2] == board[6] && (board[0] == 'x' || board[0] == 'o')) {
       return board[2];
     }
 
