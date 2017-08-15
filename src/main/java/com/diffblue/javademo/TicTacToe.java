@@ -1,5 +1,7 @@
 package com.diffblue.javademo;
 
+import com.diffblue.javademo.nestedobjects.subpackage.Item;
+
 // Copyright 2016-2017 DiffBlue limited. All rights reserved.
 
 public class TicTacToe {
@@ -79,5 +81,17 @@ public class TicTacToe {
 
     // Neither player has won yet
     return 0;
+  }
+
+  //Random call to another class
+  public boolean checkCost(int cost) {
+    Item myItem = new Item();
+    myItem.cost = 5;
+
+    if (cost == myItem.cost) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
