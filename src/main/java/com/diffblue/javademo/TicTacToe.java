@@ -42,14 +42,12 @@ public class TicTacToe {
 
     // Check if a row and column has won
     for (int i = 0; i < 3; i++) {
-      if (a[i] != 0) {
-        if (a[i] == a[3 + i] && a[i] == a[6 + i]) {
-	  return a[i];
-        }
+      if (a[i] == a[3 + i] && a[i] == a[6 + i] && a[i] !=0) {
+	return a[i];
+      }
 
-        if (a[3 * i] == a[3 * i + 1] && a[3 * i] == a[3 * i + 2]) {
-	  return a[3 * i];
-        }
+      if (a[3 * i] == a[3 * i + 1] && a[3 * i] == a[3 * i + 2] && a[3 * i] != 0) {
+	return a[3 * i];
       }
     }
 
