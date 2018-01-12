@@ -4,14 +4,19 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 
 public class DataBindExample {
 
-  public String example(String name, int age) throws Exception {
+  public String example(String name, int age) {
 
-    ObjectMapper mapper = new ObjectMapper();
+    try {
 
-    MyValue value = mapper.readValue("{\"name\":\"" + name + "\", \"age\":" + age + "}", MyValue.class);
+      ObjectMapper mapper = new ObjectMapper();
 
-    String retval = mapper.writeValueAsString(value);
-    return retval;
+      MyValue value = mapper.readValue("{\"name\":\"" + name + "\", \"age\":" + age + "}", MyValue.class);
+
+      String retval = mapper.writeValueAsString(value);
+      return retval;
+    } catch (Exception e) {
+      return "";
+    }
 
   }
 }
