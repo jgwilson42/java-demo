@@ -1,4 +1,4 @@
-package com.diffblue.javademo.jacksonDatabind;
+package com.diffblue.javademo.jacksondatabind;
 
 public class MyValue {
   public String name;

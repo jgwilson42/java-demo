@@ -8,10 +8,10 @@ public class Search {
    */
   public boolean contains(int [] array, int target) {
     boolean found = false;
-    int i;
+    int count;
 
-    for (i = 0; i < array.length; ++i) {
-      if (array[i] == target) {
+    for (count = 0; count < array.length; ++count) {
+      if (array[count] == target) {
         found = true;
       }
     }

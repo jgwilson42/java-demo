@@ -1,31 +1,19 @@
-package com.diffblue.javademo.jacksonDatabind;
+package com.diffblue.javademo.jacksondatabind;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Assert;
 import org.junit.Test;
-import org.junit.Test;
-import static org.junit.Assert.*;
+
 import static org.powermock.api.mockito.PowerMockito.mock;
 import static org.powermock.api.mockito.PowerMockito.spy;
 import static org.powermock.api.mockito.PowerMockito.when;
 
 
-import java.lang.reflect.Array;
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import org.junit.rules.ExpectedException;
-import com.diffblue.java_testcase.CompareWithFieldList;
-import com.diffblue.java_testcase.FieldList;
 import com.diffblue.java_testcase.IterAnswer;
 import com.diffblue.java_testcase.Reflector;
 
 import org.mockito.Matchers;
-import org.mockito.Mockito;
-import org.mockito.invocation.InvocationOnMock;
-import org.mockito.stubbing.Answer;
 import org.powermock.api.mockito.PowerMockito;
-import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.junit.runner.RunWith;
 import org.powermock.modules.junit4.PowerMockRunner;
 
@@ -54,7 +42,7 @@ public class DataBindExampleTest {
    * This test case covers:
    * conditional line 11 branch to line 11
    */
-  @org.powermock.core.classloader.annotations.PrepareForTest({com.diffblue.javademo.jacksonDatabind.DataBindExample.class})
+  @org.powermock.core.classloader.annotations.PrepareForTest({com.diffblue.javademo.jacksondatabind.DataBindExample.class})
   @org.junit.Test
   public void com_diffblue_javademo_jacksonDatabind_DataBindExample_example_5b21801d05e5ef76_000() throws Throwable {
 
@@ -98,7 +86,7 @@ public class DataBindExampleTest {
       writeValueAsString_answer_list.add(mock_instance_3);
 
       /* Arrange */
-      com.diffblue.javademo.jacksonDatabind.DataBindExample param_6 = (com.diffblue.javademo.jacksonDatabind.DataBindExample) Reflector.getInstance("com.diffblue.javademo.jacksonDatabind.DataBindExample");
+      com.diffblue.javademo.jacksondatabind.DataBindExample param_6 = (com.diffblue.javademo.jacksondatabind.DataBindExample) Reflector.getInstance("com.diffblue.javademo.jacksondatabind.DataBindExample");
       String param_8 = "#####";
       String name = param_8;
       int age = 4;
